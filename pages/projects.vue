@@ -12,7 +12,7 @@
     </div>
 
     <div v-if="showFilters" id="filter-menu"
-      class="w-full flex-col border-right font-fira_regular text-menu-text lg:flex">
+         class="w-full flex-col border-right font-fira_regular text-menu-text lg:flex">
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3">
@@ -55,7 +55,7 @@
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full overflow-scroll lg:self-center">
         <div id="not-found"
-          class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
+             class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
           </span>
@@ -67,7 +67,7 @@
           </span>
         </div>
 
-        <project-card v-for="(project, index) in projects" :index="index" :project="project" />
+        <project-card v-for="(project, index) in projects" :index="index" :project="project"/>
 
       </div>
     </div>
@@ -75,12 +75,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 import DevConfig from '~/developer.json';
 
 const config = ref(DevConfig)
 
-const techs = ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter']
+const techs = ['Python', 'JavaScript', 'Django', 'React', 'HTML', 'CSS', 'Tailwind']
 const filters = ref(['all'])
 const showFilters = ref(true)
 const projects = ref(config.value.projects)
