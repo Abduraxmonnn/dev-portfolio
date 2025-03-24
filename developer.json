@@ -175,18 +175,6 @@
         "Django"
       ],
       "url": "https://github.com/Abduraxmonnn/house-price-prediction"
-    },
-    "7": {
-      "title": "_clinic",
-      "description": "Modern Clinic center used minimalist design and flowers, intuitive to use, smart animations",
-      "img": "/images/projects/ethereum.png",
-      "tech": [
-        "JavaScript",
-        "React",
-        "HTML",
-        "Tailwind"
-      ],
-      "url": "http://uzlabs.uz/"
     }
   }
 }
